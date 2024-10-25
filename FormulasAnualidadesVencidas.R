@@ -49,7 +49,7 @@ tasaper = function(FV, A, Tper) {
 
 # Valor actual, conociendo la anualidad, tasa de interés del periodo y el número (plazo) de anualidades.
 
-Vactual = function(A, i, Tper) {
+Vactual = function(A, r, Tper) {
   VA = A*((1-(1 + r)^(-Tper))/r)
   return(VA)
 }
